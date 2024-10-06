@@ -1,0 +1,23 @@
+services:
+  postgresql-1:
+    image: postgres
+    restart: always
+    container_name: local-postgres-1
+    environment:
+      - "POSTGRES_USER=postgres"
+      - "POSTGRES_DB=postgres"
+      - "POSTGRES_HOST_AUTH_METHOD=trust"
+    ports:
+      - 15432:5432
+  postgresql-2:
+    image: postgres
+    restart: always
+    container_name: local-postgres-2
+    environment:
+      - "POSTGRES_USER=postgres"
+      - "POSTGRES_DB=postgres"
+      - "POSTGRES_HOST_AUTH_METHOD=trust"
+    ports:
+      - 25432:5432
+    volumes:
+      - ./postgres-data:/var/lib/postgresql/data
