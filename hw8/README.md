@@ -3,7 +3,7 @@
 docker-compose up -d
 ```
 ## Миграции
-Миграции выполнены на языке PostgreSQL и накатаны с помощью терминальной утилиты psql ([запросы см. тут](https://github.com/vitflare/db-sem-dz/tree/main/hw7/sql))
+Миграции выполнены на языке PostgreSQL и накатаны с помощью терминальной утилиты psql
 ### Установка psql
 <details>
   <summary>Установка на MacOS</summary>
@@ -35,52 +35,52 @@ choco install postgresql
 
 ### Задания
 
-Миграция базы данныз
+[Миграция базы данных](https://github.com/vitflare/db-sem-dz/blob/main/hw8/sql/01-init-schema.sql)
 ```
 psql -h localhost -p 5432 -U superadmin -d job -a -f sql/01-init-schema.sql 
 Password for user superadmin: 
 ```
 
-1 задание 
+[1 задание](https://github.com/vitflare/db-sem-dz/blob/main/hw8/sql/02-first-task.sql)
 ```
 psql -h localhost -p 5432 -U superadmin -d job -a -f sql/02-first-task.sql 
 Password for user superadmin: 
 ```
 
-2 задание 
+[2 задание](https://github.com/vitflare/db-sem-dz/blob/main/hw8/sql/03-second-task.sql)
 ```
 psql -h localhost -p 5432 -U superadmin -d job -a -f sql/03-second-task.sql 
 Password for user superadmin: 
 ```
 
-3 задание 
+[3 задание](https://github.com/vitflare/db-sem-dz/blob/main/hw8/sql/04-third-task.sql)
 ```
 psql -h localhost -p 5432 -U superadmin -d job -a -f sql/04-third-task.sql 
 Password for user superadmin: 
 ```
 
-4 задание 
+[4 задание](https://github.com/vitflare/db-sem-dz/blob/main/hw8/sql/05-fourth-task.sql)
 ```
 psql -h localhost -p 5432 -U superadmin -d job -a -f sql/05-fourth-task.sql 
 Password for user superadmin: 
 ```
 
-5 задание 
+[5 задание](https://github.com/vitflare/db-sem-dz/blob/main/hw8/sql/06-fifth-task.sql)
 ```
 psql -h localhost -p 5432 -U superadmin -d job -a -f sql/06-fifth-task.sql 
 Password for user superadmin: 
 ```
 
-6 задание 
+[6 задание](https://github.com/vitflare/db-sem-dz/blob/main/hw8/sql/07-sixth-task.sql)
 ```
 psql -h localhost -p 5432 -U superadmin -d job -a -f sql/07-sixth-task.sql 
 Password for user superadmin: 
 ```
 
-Тест триггера
+[Тест триггера](https://github.com/vitflare/db-sem-dz/blob/main/hw8/sql/08-test-trigger.sql)
 ```
 psql -h localhost -p 5432 -U superadmin -d job -a -f sql/08-test-trigger.sql 
 Password for user superadmin: 
 ```
-
-![тест триггера](/pic/test.png)
+Результат:
+![тест триггера](https://github.com/vitflare/db-sem-dz/blob/main/hw8/pic/test.png)
